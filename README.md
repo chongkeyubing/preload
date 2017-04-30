@@ -17,11 +17,11 @@ jquery图片预加载插件
 	$.preload(imgs,{
 	      ordered : true, //是否有序加载   
 
-	      each : function(index){  
+	      each : function(index){  //每张图片加载完后的执行函数
 		console.log('第'+ (index+1) +'张图片加载完毕');
 	      },
 
-	      all : function(){  
+	      all : function(){  //所有图片加载完后的执行函数
 		console.log('所有图片加载完毕');
 	      }
 	});
